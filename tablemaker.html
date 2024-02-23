@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/style.css">
+<title>Dynamic Table Creator</title>
+</head>
+<body>
+<div id="tableContainer">
+  <table id="timetable">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- You can add rows here if needed -->
+    </tbody>
+  </table>
+</div>
+
+<div class="menu" id="menu">
+  <button onclick="selectOption('Study')">Study</button>
+  <button onclick="selectOption('Work')">Work</button>
+  <button onclick="selectOption('Break')">Break</button>
+  <button onclick="selectOption('Selftime')">Selftime</button>
+  <button onclick="selectOption('SideJob')">SideJob</button>
+  <button onclick="selectOption('Bathroom')">Bathroom</button>
+  <button onclick="selectOption('Free')">None</button>
+  <button onclick="clearOption()">X</button>
+  <!-- Add more options here -->
+</div>
+
+<div class="overlay" id="overlay"></div>
+<script src="/assets/script.js"></script>
+</body>
+</html>
